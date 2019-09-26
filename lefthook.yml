@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    eslint:
+      glob: "*.{js,json}"
+      run: npm run lint:js -- {staged_files}
+    yaml-lint:
+      glob: "*.{yml,yaml}"
+      run: npm run lint:yml -- {staged_files}

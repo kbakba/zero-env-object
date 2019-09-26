@@ -4,7 +4,9 @@
   "description": "Convert plain object to object with nested properties.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:js": "eslint",
+    "lint:yml": "yamllint",
+    "lint": "npm run lint:js -- **/*.{js,json} && npm run lint:yml -- **/*.yml .github/**/*.yml"
   },
   "repository": {
     "type": "git",
@@ -22,10 +24,19 @@
   "bugs": {
     "url": "https://github.com/kbakba/zero-env-object.js/issues"
   },
+  "engines": {
+    "node": ">=0.10"
+  },
   "homepage": "https://github.com/kbakba/zero-env-object.js#readme",
   "dependencies": {
     "flat": "^2.0.1",
     "lodash.mapkeys": "^4.6.0",
     "lodash.pickby": "^4.6.0"
+  },
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.6.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-json": "^1.4.0",
+    "yaml-lint": "^1.2.4"
   }
 }
