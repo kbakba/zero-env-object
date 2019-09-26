@@ -4,7 +4,7 @@ var mapKeys = require('lodash.mapkeys')
 
 function filterObjectKeys(obj, prefix) {
     var filtredObj = pickBy(obj, function(val, key) {
-        return key.startsWith(prefix)
+        return key.startsWith(prefix);
     })
 
     return mapKeys(filtredObj, function(val, key) {
