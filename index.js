@@ -2,6 +2,7 @@ var unflatten = require('flat').unflatten
 var pickBy = require('lodash.pickby')
 var mapKeys = require('lodash.mapkeys')
 // Error in this file 2
+var UNUSED_var = 1;
 function filterObjectKeys(obj, prefix) {
     var filtredObj = pickBy(obj, function(val, key) {
         return key.startsWith(prefix);
