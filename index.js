@@ -2,10 +2,11 @@ var unflatten = require('flat').unflatten
 var pickBy = require('lodash.pickby')
 var mapKeys = require('lodash.mapkeys')
 // Error in this file 2
-var UNUSED_var = 1;
+var UNUSED_var = 1
+
 function filterObjectKeys(obj, prefix) {
     var filtredObj = pickBy(obj, function(val, key) {
-        return key.startsWith(prefix);
+        return key.startsWith(prefix)
     })
 
     return mapKeys(filtredObj, function(val, key) {
@@ -18,7 +19,7 @@ function objectEnv(options) {
         env: process.env,
         prefix: 'CONFIG_',
         delimiter: '_'
-    }, options)
+    }, options);
 
     return unflatten(filterObjectKeys(opts.env, opts.prefix), opts)
 }
