@@ -4,7 +4,7 @@ name: ESlint-workflow
 
 jobs:
   eslint:
-    name: eslint-name
+    name: runner / a-b-r-o-w-n/eslint-action@v1
     runs-on: ubuntu-latest
 
     steps:
