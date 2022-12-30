@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/kbakba/zero-env-object.js#readme",
   "dependencies": {
-    "flat": "^2.0.1",
+    "flat": "^5.0.1",
     "lodash.mapkeys": "^4.6.0",
     "lodash.pickby": "^4.6.0"
   },
